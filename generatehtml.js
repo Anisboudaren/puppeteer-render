@@ -111,7 +111,7 @@ function generateHTML(data, submissionId) {
 
         // Define extra services with their prices
         const extraServices = [
-            { name: "Payement en ligne par Edahabia/CIB", description: "Payement en ligne par Edahabia/CIB", price: 20000 },
+            { name: "Payement en ligne par Edahabia/CIB ( 20.000 DA)", description: "Payement en ligne par Edahabia/CIB", price: 20000 },
             { name: "Payement en ligne par Visa/ MasterCard /PayPal", description: "Payement en ligne par Visa/MasterCard/PayPal", price: 30000 },
             { name: "Multilingue", description: "Site multilingue", price: 5000 },
             { name: "blog", description: "Intégration d'un blog", price: 15000 },
