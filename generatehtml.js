@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const moment = require('moment');
-
+const {dot} = require("./tools")
 function generateHTML(data, submissionId) {
     try {
         console.log(data);

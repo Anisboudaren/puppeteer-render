@@ -4,12 +4,13 @@ const { generateHTML } = require("./generatehtml");
 const {sendEmail} = require("./emailsender")
 const {scrapeLogic} = require("./scrapeLogic")
 const app = express();
-
+app.use(express.json());
 const PORT = process.env.PORT || 4000;
 
 app.get("/scrape", (req, res) => {
   scrapeLogic(res);
 });
+const sentEmails = new Set();
 
 app.post('/webhook', async (req, res) => {
   console.log(req.body)
