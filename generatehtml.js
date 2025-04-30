@@ -112,13 +112,13 @@ function generateHTML(data, submissionId) {
         // Define extra services with their prices
         const extraServices = [
             { name: "Payement en ligne par Edahabia/CIB ( 20.000 DA)", description: "Payement en ligne par Edahabia/CIB", price: 20000 },
-            { name: "Payement en ligne par Visa/ MasterCard /PayPal", description: "Payement en ligne par Visa/MasterCard/PayPal", price: 30000 },
-            { name: "Multilingue", description: "Site multilingue", price: 5000 },
-            { name: "blog", description: "Intégration d'un blog", price: 15000 },
-            { name: "optimisation SEO avancé", description: "Optimisation SEO avancée", price: 20000 },
-            { name: "Intégration des sociétés de livraison", description: "Intégration des sociétés de livraison", price: 8000 },
+            { name: "Payement en ligne par Visa/ MasterCard /PayPal (30,000 DA)", description: "Payement en ligne par Visa/MasterCard/PayPal", price: 30000 },
+            { name: "Multilingue (5,000 DA per langue)", description: "Site multilingue", price: 5000 },
+            { name: "blog (15,000 DA)", description: "Intégration d'un blog", price: 15000 },
+            { name: "optimisation SEO avancée (20,000 DA)", description: "Optimisation SEO avancée", price: 20000 },
+            { name: "Intégration des sociétés de livraison (8,000 DA per société )", description: "Intégration des sociétés de livraison", price: 8000 },
             {
-                name: "Intégration pixel",
+                name: "Intégration pixel (3,000 DA per platform)",
                 description: data["devlly_pixel"] && data["devlly_pixel"].length > 0
                     ? `Intégration de pixels ${data["devlly_pixel"].join(', ')}`
                     : "Intégration de pixels (Aucune plateforme spécifiée)",
@@ -127,13 +127,13 @@ function generateHTML(data, submissionId) {
                     : 3000
             },
             {
-                name: "Design des landing pages",
+                name: "Design des landing pages (2,000 DA per landing page)",
                 description: `Design des landing pages (${data["devlly_landingpage_num_1"] || 1})`,
                 price: data["devlly_landingpage_num_1"]
                     ? 2000 * data["devlly_landingpage_num_1"]
                     : 2000
             },
-            { name: "intégrations spécifiques avec des outils existants", description: "Intégrations spécifiques avec des outils existants", price: 0 }
+            { name: "intégrations spécifiques avec des outils existants (pour négocier)", description: "Intégrations spécifiques avec des outils existants", price: 0 }
         ];
 
         // Check and add selected extra services
